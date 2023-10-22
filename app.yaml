@@ -1,5 +1,5 @@
 runtime: python39
-entrypoint: gunicorn -b :$PORT yourapp:app
+entrypoint: gunicorn -b :$PORT main.py
 
 handlers:
 - url: /static
